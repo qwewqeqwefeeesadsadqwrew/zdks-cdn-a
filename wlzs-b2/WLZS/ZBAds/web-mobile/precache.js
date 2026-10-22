@@ -17,7 +17,7 @@
   function fmt(n) { return (n / 1048576).toFixed(1) + 'MB'; }
 
   function start() {
-    fetch(LIST, { cache: 'no-cache' }).then(function (r) { return r.json(); }).then(function (data) {
+    fetch(LIST + '?t=' + Date.now(), { cache: 'no-store' }).then(function (r) { return r.json(); }).then(function (data) {
       if (!/^\//.test(data.base)) {
         localStorage.removeItem(DONE);
         box.textContent = '预缓存清单异常：base 必须以 / 开头，实际=' + data.base;
