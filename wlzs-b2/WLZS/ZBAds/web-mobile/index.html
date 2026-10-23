@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <base href="https://gcore.jsdelivr.net/gh/qwewqeqwefeeesadsadqwrew/zdks-cdn-a@2a13af37b2c01de5bb8fd6a4dd42282395d3210b/wlzs-b2/WLZS/ZBAds/web-mobile/">
 
   <!-- 演示站：解锁全部关卡（写游戏自己的存档键）+ 关卡资源根指向本站 -->
   <script>
@@ -11,7 +12,7 @@
       localStorage.setItem('WoLaiZhangShaoV1_allUnLockHour', '999999');
       localStorage.setItem('WoLaiZhangShaoV1_lastSignInTime', String(Date.now()));
     } catch (e) {}
-    var base = location.href.replace(/WLZS\/ZBAds\/web-mobile\/.*$/, '');
+    var base = 'https://gcore.jsdelivr.net/gh/qwewqeqwefeeesadsadqwrew/zdks-cdn-a@2a13af37b2c01de5bb8fd6a4dd42282395d3210b/wlzs-b2/';
     var t = setInterval(function () {
       try {
         var mcc = window.__require && window.__require('mCore').mcc;
@@ -112,9 +113,7 @@
     });
 })();
 </script>
-<script src="zlzs-autoplay.js?v=10" charset="utf-8"></script>
+<script src="zlzs-autoplay.js?v=11" charset="utf-8"></script>
 <script src="zlzs-boot-b2.js?v=1" charset="utf-8"></script>
-<script>if("serviceWorker" in navigator){navigator.serviceWorker.register("/zdks-cdn-a/sw.js").catch(function(){});}</script>
-<script src="precache.js"></script>
 </body>
 </html>
